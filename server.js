@@ -6,14 +6,14 @@ var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8080;
 const MongoClient = require('mongodb').MongoClient
-var mongoose = require('mongoose');
-var passport = require('passport');
-var flash    = require('connect-flash');
+var mongoose = require('mongoose');// help to talk with database
+var passport = require('passport');// password help help
+var flash    = require('connect-flash'); //error and alert help
 
-var morgan       = require('morgan');
-var cookieParser = require('cookie-parser');
+var morgan       = require('morgan');//logger in the terminal
+var cookieParser = require('cookie-parser');//cookies in your browser
 var bodyParser   = require('body-parser');
-var session      = require('express-session');
+var session      = require('express-session'); 
 
 var configDB = require('./config/database.js');
 
